@@ -35,7 +35,7 @@ using namespace std;
 
 const std::string CDB_OUTPUT_DIR = "utf4cpp/cdb/";
 
-const std::string CDB_INPUT_DIR  = "/home/marcos/Documentos/cpp/unicode/Segmentation/props/6.3.0/";
+const std::string CDB_INPUT_DIR  = "unicode/Segmentation/props/6.3.0/";
 
 
 void create_grapheme_break_files(){
