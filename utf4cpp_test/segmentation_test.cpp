@@ -121,7 +121,7 @@ struct GraphemeSegmentationTest	{
 	}
 	
 	void init()	{
-		ifstream fs("/home/marcos/Documentos/cpp/unicode/Segmentation/test/GraphemeBreakTest.txt");
+		ifstream fs("unicode/Segmentation/test/GraphemeBreakTest.txt");
 		string line;
 		bool error = false;
 		int line_num =0;
@@ -242,7 +242,7 @@ struct WordSegmentationTest	{
 	
 	void init()	{
 		cout << "WordSegmentationTest::init()" << endl; 
-		ifstream fs("/home/marcos/Documentos/cpp/unicode/Segmentation/test/WordBreakTest.txt");
+		ifstream fs("unicode/Segmentation/test/WordBreakTest.txt");
 		string line;
 		int num_line=0;
 		bool error = false;
@@ -354,23 +354,23 @@ struct TokenizerTraits;
 
 template<>
 struct TokenizerTraits<unicpp::v3::GraphemeTokenizer>	{
-	constexpr static const char* test_file = "/home/marcos/Documentos/cpp/unicode/Segmentation/test/6.3.0/GraphemeBreakTest.txt";
+	constexpr static const char* test_file = "unicode/Segmentation/test/6.3.0/GraphemeBreakTest.txt";
 };
 
 template<>
 struct TokenizerTraits<unicpp::v3::WordTokenizer>	{
-	constexpr static const char* test_file = "/home/marcos/Documentos/cpp/unicode/Segmentation/test/6.3.0/WordBreakTest.txt";
+	constexpr static const char* test_file = "unicode/Segmentation/test/6.3.0/WordBreakTest.txt";
 };
 
 template<>
 struct TokenizerTraits<unicpp::v3::SentenceTokenizer>	{
-	constexpr static const char* test_file = "/home/marcos/Documentos/cpp/unicode/Segmentation/test/6.3.0/SentenceBreakTest.txt";
+	constexpr static const char* test_file = "unicode/Segmentation/test/6.3.0/SentenceBreakTest.txt";
 };
 
 /*
 template<>
 struct TokenizerTraits<unicpp::v3::LineTokenizer>	{
-	constexpr static const char* test_file = "/home/marcos/Documentos/cpp/unicode/Segmentation/test/LineBreakTest.txt";
+	constexpr static const char* test_file = "unicode/Segmentation/test/LineBreakTest.txt";
 };
 */
 
